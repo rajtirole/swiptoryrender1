@@ -4,7 +4,7 @@ import { Routes ,Route} from 'react-router-dom';
 
 function App() {
   return (
-   <main>
+    <BrowserRouter>
     <Routes>
     <Route path="/" element={<div>homepage</div>} />
     <Route path="/story" element={<div>story</div>} />
@@ -13,7 +13,7 @@ function App() {
     <Route path="/getId/test/" element={<div>getid/test</div>} />
     <Route path="*" element={<div>not found</div>} />
     </Routes>
-   </main>
+    </BrowserRouter>
   );
 }
 
