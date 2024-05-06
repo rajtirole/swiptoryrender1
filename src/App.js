@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { Routes ,Route, useNavigate} from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const navigate=useNavigate()
   return (
-    <BrowserRouter>
     <Routes>
     <Route path="/" element={<div>homepage
       <button onClick={()=>{
@@ -18,7 +18,6 @@ function App() {
     <Route path="/getId/test/" element={<div>getid/test</div>} />
     <Route path="*" element={<div>not found</div>} />
     </Routes>
-    </BrowserRouter>
   );
 }
 
